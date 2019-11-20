@@ -21,10 +21,12 @@ $detector->faceDetect($get);
 $tojson = $detector->toJson();
 include ("conn.php");
 
-$type = pathinfo($get, PATHINFO_EXTENSION);
+$type = pathinfo($get, PATHINFO_EXTENSION); //If use cURL, Delete this code
 $data = file_get_contents($get); //If use cURL, Delete this code
 $base64 = base64_encode($data); //If use cURL, $base64 = base64_encode($s);
-
+if($tojson == null) {
+die("Yüz Algılanamadı");
+} else {
 $update = $db->prepare("INSERT INTO face_table(face_title, face_json, face_data) VALUES (:title, :json, :data) ");
 $update->bindValue(':title', $get);
 $update->bindValue(':json', $tojson);
@@ -36,6 +38,7 @@ if($update){
 echo '<script>
 alert("Başarılı | Success");
 </script>';
+}
 }
 }
 ?>
