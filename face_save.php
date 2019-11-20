@@ -21,7 +21,7 @@ $detector->faceDetect($get);
 $tojson = $detector->toJson();
 include ("conn.php");
 
-$type = pathinfo($get, PATHINFO_EXTENSION); //If use cURL, Delete this code
+$type = pathinfo($get, PATHINFO_EXTENSION);
 $data = file_get_contents($get); //If use cURL, Delete this code
 $base64 = base64_encode($data); //If use cURL, $base64 = base64_encode($s);
 	
