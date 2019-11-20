@@ -5,8 +5,8 @@ PHP Face Recognition | Save DB
 1) Copy jpg files in conv folder
 2) face_save.php?pic=conv/file_name.jpg (File Save in MySQL) (Firstly Step :) )
 And ...
-face_show?id=id_query (Show Face)
-face_query.php?gor=id_query (Show Face Location and Show Photo)
+face_show?id=id_query (Show Face (Canvas) )
+face_query.php?gor=id_query (Show Face Location and Show Photo (Not Canvas) )
 </pre>
 <hr></hr>
 <pre>
