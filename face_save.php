@@ -33,9 +33,7 @@ $db->beginTransaction();
 $update->execute();
 $db->commit();
 if($update){
-echo '<script>
-alert("Başarılı | Success");
-</script>';
+echo '<script>alert("Başarılı | Success");</script>';
 // curl_close($ch);
 }
 }
