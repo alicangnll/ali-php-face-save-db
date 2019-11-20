@@ -4,11 +4,21 @@
 
 include "class/yuz_tanilama.php";
 $get = $_GET["pic"];
+
+//$ch = curl_init();
+//curl_setopt($ch, CURLOPT_URL, $_GET["pic"]);
+//curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+//curl_setopt($ch, CURLOPT_USERPWD, "user:pass");
+//$result = curl_exec($ch);
+//curl_close($ch);
+
 if(empty($get)) {
 	echo 'Yüz Tanımlanamadı!';
 } else {
 $detector = new alicangonullu\YuzTanila('class/algila.dat');
 $detector->faceDetect($get);
+// $detector->faceDetect($result);
 $tojson = $detector->toJson();
 include ("conn.php");
 
