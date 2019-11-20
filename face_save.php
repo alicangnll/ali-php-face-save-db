@@ -17,7 +17,7 @@ if(empty($get)) {
 	echo 'Yüz Tanımlanamadı!';
 } else {
 $detector = new alicangonullu\YuzTanila('class/algila.dat');
-$detector->faceDetect($get);
+$detector->faceDetect($get); // If use cURL, $detector->faceDetect($s);
 $tojson = $detector->toJson();
 include ("conn.php");
 
