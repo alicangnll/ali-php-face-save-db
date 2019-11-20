@@ -11,7 +11,7 @@ $get = ''.$row["face_data"].'';
 $data = base64_decode($get);
 $im = imagecreateFromString($data);
 if (!$im) {
-  die('Base64 Doğrulanamadı | Base64 Not Valid');
+die('Base64 Doğrulanamadı | Base64 Not Valid');
 }
 include "class/yuz_tanilama.php";
 $img_file = 'conv/filename-'.date('Y-m-d').'.jpg';
