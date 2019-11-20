@@ -7,3 +7,7 @@ face_save.php?pic=conv/file_name.jpg (File Save in MySQL) (Firstly Step :) )
 face_query.php?gor=id_query (Show Face Location and Show Photo)
 </pre>
 <hr></hr>
+<pre>
+Face Recognition : <a href="https://github.com/developersahab/face-recognition">Click</a>
+MySQL INSERT, SELECT : Ali Can GÖNÜLLÜ
+</pre>
