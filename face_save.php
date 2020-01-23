@@ -47,7 +47,7 @@ $db->commit();
 if($update){
 echo '<script>alert("Başarılı | Success");</script>';
 if($getcurl == "1"){
-// curl_close($ch);
+curl_close($ch);
 } else {
 }
 
