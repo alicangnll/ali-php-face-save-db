@@ -1,6 +1,6 @@
 <?php
 // DB Import : Ali Can Gönüllü
-// xxx.php?pic=pics/file_name.jpg OR xxx.php?pic=file_name.jpg
+// face_save.php?pic=picture_link&curl=1 OR face_save.php?pic=file/filename.jpg&curl=0
 
 include "class/yuz_tanilama.php";
 $get = $_GET["pic"];
