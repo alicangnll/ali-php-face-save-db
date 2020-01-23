@@ -6,7 +6,7 @@ PHP Face Recognition | Save DB
 2) face_save.php?pic=conv/file_name.jpg (File Save in MySQL) (Firstly Step :) )
 <b>If you request use an cURL, Please look in save_face.php</b>
 And ...
-face_show?id=id_query (Show Face (Canvas) )
+face_show.php?pic=id_query (Show Face (Canvas) )
 face_query.php?gor=id_query (Show Face Location and Show Photo (Not Canvas) )
 </pre>
 <hr></hr>
