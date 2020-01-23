@@ -14,8 +14,8 @@ if (!$im) {
 die('Base64 Doğrulanamadı | Base64 Not Valid');
 }
 include "class/yuz_tanilama.php";
-$img_file = 'conv/filename-'.date('Y-m-d').'.jpg';
-$newbie = imagejpeg($im, $img_file, 128);
+$img_file = 'conv/filename-'.date('Y-m-d').'-'.date('H-i-s').'.jpg';
+$newbie = imagejpeg($im, $img_file, 256);
 
 $detector = new alicangonullu\YuzTanila('class/algila.dat');
 $detector->faceDetect($img_file);
