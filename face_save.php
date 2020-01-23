@@ -14,8 +14,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
 $s = curl_exec($ch);
-} else {
 }
+
 if(empty($get)) {
 	echo 'Yüz Tanımlanamadı!';
 } else {
@@ -30,7 +30,7 @@ $detector->faceDetect($get);
 $tojson = $detector->toJson();
 include ("conn.php");
 if($getcurl == "1"){
-	$base64 = base64_encode($s);
+$base64 = base64_encode($s);
 } else {
 $type = pathinfo($get, PATHINFO_EXTENSION); //If use cURL, Delete this code
 $data = file_get_contents($get); //If use cURL, Delete this code
@@ -48,7 +48,6 @@ if($update){
 echo '<script>alert("Başarılı | Success");</script>';
 if($getcurl == "1"){
 curl_close($ch);
-} else {
 }
 
 }
