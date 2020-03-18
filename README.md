@@ -1,4 +1,6 @@
 # PHP Face Recognition | Save DB
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falicangonullu%2Fali-php-face-save-db.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falicangonullu%2Fali-php-face-save-db?ref=badge_shield)
+
 PHP Face Recognition | Save DB
 <hr></hr>
 <pre>
@@ -21,3 +23,7 @@ face_query.php?gor=id_query (Show Face Location and Show Photo (Not Canvas) )
 Face Recognition Class : <a href="https://github.com/developersahab/face-recognition">by DeveloperSahab</a>
 MySQL Operations : <a href="https://github.com/alicangonullu/ali-php-face-save-db">by AliCanGÖNÜLLÜ</a>
 </pre>
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falicangonullu%2Fali-php-face-save-db.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falicangonullu%2Fali-php-face-save-db?ref=badge_large)
