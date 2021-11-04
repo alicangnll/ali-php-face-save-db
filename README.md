@@ -13,11 +13,11 @@ face_query.php?gor=id_query (Show Face Location and Show Photo (Not Canvas) )
 </pre>
 <hr></hr>
 <b> Images </b>
-<img src="https://alicangonullu.github.io/ali-php-face-save-db/delete_this/pic1.png" widht="500" height="500">
+<img src="https://alicangnll.github.io/ali-php-face-save-db/delete_this/pic1.png" widht="500" height="500">
 <br>
-<img src="https://alicangonullu.github.io/ali-php-face-save-db/delete_this/pic2.png" widht="500" height="500">
+<img src="https://alicangnll.github.io/ali-php-face-save-db/delete_this/pic2.png" widht="500" height="500">
 <br>
-<img src="https://alicangonullu.github.io/ali-php-face-save-db/delete_this/pic3.png" widht="500" height="500">
+<img src="https://alicangnll.github.io/ali-php-face-save-db/delete_this/pic3.png" widht="500" height="500">
 <br>
 <pre>
 Face Recognition Class : <a href="https://github.com/developersahab/face-recognition">by DeveloperSahab</a>
