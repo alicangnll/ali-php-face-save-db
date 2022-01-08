@@ -7,6 +7,11 @@ $get = $_GET["pic"];
 $getcurl = $_GET["curl"];
 
 if($getcurl == "1"){
+if (filter_var($get, FILTER_VALIDATE_URL) === FALSE) {
+die('Not a valid URL');
+} else {
+    //Devam
+}
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $get);
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36");
