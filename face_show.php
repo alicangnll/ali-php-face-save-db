@@ -3,7 +3,6 @@ include ("conn.php");
 
 $stmt = $db->prepare('SELECT * FROM face_table WHERE face_id = :iddegeri');
 $stmt->execute(array(':iddegeri' => strip_tags($_GET["pic"])));
-$stmt->execute();
 if($row = $stmt->fetch()) {
 $get = ''.$row["face_data"].'';
 }

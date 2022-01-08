@@ -49,11 +49,9 @@ class YuzTanila
             $this->canvas = $file;
 
         } elseif (is_file($file)) {
-
             $this->canvas = imagecreatefromjpeg($file);
 
         } elseif (is_string($file)) {
-
             $this->canvas = imagecreatefromstring($file);
             
         } else {

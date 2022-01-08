@@ -41,11 +41,9 @@ $update = $db->prepare("INSERT INTO face_table(face_title, face_json, face_data)
 $update->bindValue(':title', $get);
 $update->bindValue(':json', $tojson);
 $update->bindValue(':data', $base64);
-$db->beginTransaction();
 $update->execute();
-$db->commit();
 if($update){
-echo '<script>alert("Başarılı | Success");</script>';
+echo '<script>window.location.href="face_query.php?gor='.$db->lastInsertId().'";</script>';
 if($getcurl == "1"){
 curl_close($ch);
 }
